@@ -424,17 +424,46 @@
     height: 160px;
     background: var(--navy);
     display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 6px;
     position: relative;
     overflow: hidden;
   }
+  .pt-navy  { background: #0D1B2A; }
+  .pt-teal  { background: #0F6E56; }
+  .pt-slate { background: #2E4057; }
+  .pt-rose  { background: #6B2D4E; }
+  .pt-amber { background: #7A4A0B; }
+  .pt-purple{ background: #3C3489; }
   .project-thumb-label {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
     font-style: italic;
-    color: rgba(201,168,76,0.25);
+    color: rgba(255,255,255,0.18);
     letter-spacing: 0.05em;
     user-select: none;
   }
+  .pt-domain {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: lowercase;
+    color: rgba(255,255,255,0.35);
+    font-family: 'DM Sans', sans-serif;
+  }
+  .project-link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    padding-bottom: 2px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .project-link:hover { color: var(--gold-light); border-color: var(--gold-light); }
   .project-body { padding: 22px 24px 26px; }
   .project-cat {
     font-size: 11px;
@@ -834,80 +863,200 @@
 
 <!-- PROJECTS -->
 <section id="projects">
-  <p class="section-label">Selected Work</p>
-  <h2 class="section-title">Projects &<br><em>Case Studies</em></h2>
+  <p class="section-label">Live Projects</p>
+  <h2 class="section-title">Work I'm Building<br><em>Right Now</em></h2>
   <div class="divider"></div>
   <div class="projects-grid">
 
     <div class="project-card">
-      <div class="project-thumb"><span class="project-thumb-label">TechHive</span></div>
+      <div class="project-thumb pt-navy">
+        <span class="project-thumb-label">TechHive</span>
+        <span class="pt-domain">techhive.ae</span>
+      </div>
       <div class="project-body">
-        <div class="project-cat">SEO · Content Marketing</div>
-        <div class="project-name">TechHive AI — Full Service Site</div>
-        <p class="project-desc">50+ SEO-optimised landing pages across Dubai and Lahore markets covering cloud, DevOps, mobile development, SQA, and digital marketing services.</p>
+        <div class="project-cat">SEO · Content Marketing · Web Build</div>
+        <div class="project-name">TechHive AI — Dubai Tech Agency</div>
+        <p class="project-desc">50+ SEO-optimised landing pages across Dubai and Lahore markets — cloud computing, DevOps, Laravel, Flutter, SQA, and full-stack digital marketing services.</p>
         <div class="project-chips">
           <span class="chip">WordPress</span><span class="chip">Elementor</span><span class="chip">On-Page SEO</span><span class="chip">Content Strategy</span>
         </div>
+        <a href="https://techhive.ae/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-thumb"><span class="project-thumb-label">AXIOM</span></div>
-      <div class="project-body">
-        <div class="project-cat">Web Design · WordPress Plugin</div>
-        <div class="project-name">AXIOM Dubai — AI Agency Website</div>
-        <p class="project-desc">Full website build for a Dubai AI marketing agency with glassmorphism aesthetic, violet accent system, and a custom 11-widget Elementor plugin package.</p>
-        <div class="project-chips">
-          <span class="chip">WordPress</span><span class="chip">Elementor Plugin</span><span class="chip">UI Design</span><span class="chip">PHP</span>
-        </div>
+      <div class="project-thumb pt-teal">
+        <span class="project-thumb-label">Limousine</span>
+        <span class="pt-domain">limousineservicesdubai.com</span>
       </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-thumb"><span class="project-thumb-label">Limousine</span></div>
       <div class="project-body">
-        <div class="project-cat">Landing Page · Local SEO</div>
+        <div class="project-cat">Landing Page · Local SEO · Luxury</div>
         <div class="project-name">Limousine Services Dubai</div>
-        <p class="project-desc">Luxury chauffeur service landing pages targeting Dubai market — cream/gold brand system, Cormorant Garamond typography, WhatsApp booking integration.</p>
+        <p class="project-desc">Luxury chauffeur service site targeting Dubai market — cream/gold brand system, Cormorant Garamond typography, WhatsApp booking integration, and structured local SEO.</p>
         <div class="project-chips">
           <span class="chip">WordPress</span><span class="chip">Local SEO</span><span class="chip">Luxury Design</span><span class="chip">WhatsApp CTA</span>
         </div>
+        <a href="https://limousineservicesdubai.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-thumb"><span class="project-thumb-label">Niche Tools</span></div>
+      <div class="project-thumb pt-slate">
+        <span class="project-thumb-label">SafeWater</span>
+        <span class="pt-domain">safewatertech.com</span>
+      </div>
       <div class="project-body">
-        <div class="project-cat">Niche Sites · Tool Pages</div>
-        <div class="project-name">Pet Breed & Calculator Network</div>
-        <p class="project-desc">Built calculator and quiz pages for whatbreedismycat.io and aidogbreedidentifier.com — breed quizzes, calorie calculators, pregnancy tools, and AI-powered breed identifiers.</p>
+        <div class="project-cat">Web Build · SEO · B2B</div>
+        <div class="project-name">SafeWater Tech</div>
+        <p class="project-desc">Full website for a water technology solutions company, combining technical SEO foundations with a clean B2B design and targeted service page architecture.</p>
         <div class="project-chips">
-          <span class="chip">WordPress</span><span class="chip">Affiliate SEO</span><span class="chip">AI Integration</span><span class="chip">Tool Pages</span>
+          <span class="chip">WordPress</span><span class="chip">Technical SEO</span><span class="chip">B2B</span><span class="chip">Service Pages</span>
         </div>
+        <a href="https://safewatertech.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-thumb"><span class="project-thumb-label">Fabertec</span></div>
+      <div class="project-thumb pt-rose">
+        <span class="project-thumb-label">Nordic</span>
+        <span class="pt-domain">nordicskinklinik.se</span>
+      </div>
       <div class="project-body">
-        <div class="project-cat">SEO Audit · Consulting</div>
-        <div class="project-name">Fabertec UK — Site Audit Report</div>
-        <p class="project-desc">Deep technical audit for a UK CNC machinery supplier including code analysis, crawl issues, on-page gaps, and a structured DOCX deliverable with prioritised recommendations.</p>
+        <div class="project-cat">Web Build · Local SEO · Swedish Market</div>
+        <div class="project-name">Nordic Skin Klinik</div>
+        <p class="project-desc">Website for a Swedish skin clinic — localised SEO targeting Swedish search market, clean medical aesthetic, and conversion-focused service landing pages.</p>
         <div class="project-chips">
-          <span class="chip">Technical SEO</span><span class="chip">Audit Report</span><span class="chip">UK Market</span>
+          <span class="chip">WordPress</span><span class="chip">Local SEO</span><span class="chip">Swedish Market</span><span class="chip">Medical</span>
         </div>
+        <a href="https://nordicskinklinik.se/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-thumb"><span class="project-thumb-label">Kilt Mens</span></div>
+      <div class="project-thumb pt-amber">
+        <span class="project-thumb-label">On The Go</span>
+        <span class="pt-domain">onthegomovers.co.uk</span>
+      </div>
       <div class="project-body">
-        <div class="project-cat">E-commerce SEO · Content</div>
-        <div class="project-name">KiltMens.com — US E-commerce SEO</div>
-        <p class="project-desc">17 SEO content documents for a US kilt e-commerce brand alongside a full SEO audit and keyword strategy for menkilt.com.</p>
+        <div class="project-cat">Web Build · Local SEO · UK Market</div>
+        <div class="project-name">On The Go Movers — UK</div>
+        <p class="project-desc">Removals and moving company site targeting UK local search — service area pages, quote CTAs, and local citation strategy to drive inbound enquiries.</p>
         <div class="project-chips">
-          <span class="chip">E-commerce SEO</span><span class="chip">Content Writing</span><span class="chip">US Market</span>
+          <span class="chip">WordPress</span><span class="chip">Local SEO</span><span class="chip">UK Market</span><span class="chip">Lead Gen</span>
         </div>
+        <a href="https://onthegomovers.co.uk/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb pt-purple">
+        <span class="project-thumb-label">Puns</span>
+        <span class="pt-domain">punsgenerator.com</span>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">Niche Tool · SEO · AI-Powered</div>
+        <div class="project-name">Puns Generator</div>
+        <p class="project-desc">AI-powered pun and wordplay generator — topical keyword targeting, high-volume informational SEO, and an engaging tool experience to drive repeat traffic.</p>
+        <div class="project-chips">
+          <span class="chip">AI Tool</span><span class="chip">Niche SEO</span><span class="chip">WordPress</span><span class="chip">Viral Content</span>
+        </div>
+        <a href="https://punsgenerator.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb pt-teal">
+        <span class="project-thumb-label">Cat Breed</span>
+        <span class="pt-domain">whatbreedismycat.io</span>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">Niche Site · Tool Pages · Affiliate SEO</div>
+        <div class="project-name">What Breed Is My Cat</div>
+        <p class="project-desc">Multi-page niche site with breed quizzes, calorie calculators, water intake tools, pregnancy calculators, and a cat language translator — all SEO-optimised with internal linking.</p>
+        <div class="project-chips">
+          <span class="chip">WordPress</span><span class="chip">Niche SEO</span><span class="chip">Calculator Tools</span><span class="chip">Affiliate</span>
+        </div>
+        <a href="https://whatbreedismycat.io/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb pt-navy">
+        <span class="project-thumb-label">Word Counter</span>
+        <span class="pt-domain">wordcharactercounter.com</span>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">Utility Tool · SEO · High-Volume</div>
+        <div class="project-name">Word & Character Counter</div>
+        <p class="project-desc">Clean, fast word and character counting utility targeting high-volume informational queries — optimised for featured snippets and writers, students, and social media users.</p>
+        <div class="project-chips">
+          <span class="chip">Tool Page</span><span class="chip">Technical SEO</span><span class="chip">WordPress</span><span class="chip">High CPC</span>
+        </div>
+        <a href="https://wordcharactercounter.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb pt-slate">
+        <span class="project-thumb-label">CTRL Calc</span>
+        <span class="pt-domain">ctrlcalculator.com</span>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">Calculator Network · SEO · Tools</div>
+        <div class="project-name">CTRL Calculator</div>
+        <p class="project-desc">Multi-category calculator network covering finance, health, maths, and lifestyle — built for breadth of keyword coverage, featured snippet capture, and programmatic SEO scaling.</p>
+        <div class="project-chips">
+          <span class="chip">Calculator SEO</span><span class="chip">WordPress</span><span class="chip">Programmatic</span><span class="chip">Tool Network</span>
+        </div>
+        <a href="https://ctrlcalculator.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb pt-amber">
+        <span class="project-thumb-label">Dog Breed AI</span>
+        <span class="pt-domain">aidogbreedidentifier.com</span>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">AI Tool · Niche SEO · Affiliate</div>
+        <div class="project-name">AI Dog Breed Identifier</div>
+        <p class="project-desc">AI-powered dog breed identifier alongside breed quizzes, toxicity calculators, and random breed generators — full niche site with internal linking and monetisation strategy.</p>
+        <div class="project-chips">
+          <span class="chip">AI Integration</span><span class="chip">WordPress</span><span class="chip">Niche SEO</span><span class="chip">Affiliate</span>
+        </div>
+        <a href="https://aidogbreedidentifier.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb pt-purple">
+        <span class="project-thumb-label">IPv6 Checker</span>
+        <span class="pt-domain">ipv6portchecker.com</span>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">Network Tool · Technical SEO</div>
+        <div class="project-name">IPv6 Port Checker</div>
+        <p class="project-desc">Technical network utility for checking open ports over IPv6 — developer-targeted SEO, structured data, and part of a wider network tools cluster targeting sysadmin and security queries.</p>
+        <div class="project-chips">
+          <span class="chip">Network Tool</span><span class="chip">Technical SEO</span><span class="chip">WordPress</span><span class="chip">Developer Niche</span>
+        </div>
+        <a href="https://ipv6portchecker.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb pt-rose">
+        <span class="project-thumb-label">Lip Shape</span>
+        <span class="pt-domain">lipshapedetector.com</span>
+      </div>
+      <div class="project-body">
+        <div class="project-cat">AI Tool · Beauty Niche · Plugin</div>
+        <div class="project-name">Lip Shape Detector</div>
+        <p class="project-desc">AI-powered lip shape detector using Groq API vision integration — WordPress plugin with JS/PHP fallback ratio logic, targeting beauty and makeup niche search traffic.</p>
+        <div class="project-chips">
+          <span class="chip">Groq API</span><span class="chip">WordPress Plugin</span><span class="chip">AI Vision</span><span class="chip">Beauty Niche</span>
+        </div>
+        <a href="https://lipshapedetector.com/" target="_blank" rel="noopener" class="project-link">Visit Site →</a>
       </div>
     </div>
 
@@ -1062,7 +1211,7 @@
     <div class="contact-right">
       <p>Whether you need a full SEO audit, a high-converting landing page, a Google Ads campaign, or an entire digital marketing strategy — I deliver work that moves the needle.</p>
       <p>With experience across Dubai, Lahore, UK, and US markets and a hands-on background in both technical SEO and performance marketing, I bring strategy and execution together.</p>
-      <a href="mailto:" class="btn-primary" style="display:inline-block">Send a Message</a>
+      <a href="/cdn-cgi/l/email-protection#04" class="btn-primary" style="display:inline-block">Send a Message</a>
     </div>
   </div>
 </section>
@@ -1073,7 +1222,7 @@
   <span class="footer-copy">Senior SEO & Performance Marketing Specialist · Lahore, Pakistan · 2026</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
